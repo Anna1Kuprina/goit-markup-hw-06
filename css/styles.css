@@ -1027,10 +1027,8 @@ footer {
         align-items: center;
             justify-content: center;
 }
-.subscribe .button-subsribe{
-    
+ .button-subsribe{ 
     position: relative;
-
      width: 200px;
      height: 50px;
         font-weight: 700;
@@ -1046,10 +1044,14 @@ footer {
         padding: 10px 62px 10px 29px;
         transition: background-color var(--color-accent);
 }
-.subscribe .icon{
-position: absolute;
-            top: 50%;
-            right: 28px;
-            transform: translateY(-50%);
-       
+ .icon{
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);      
 }
+
+ .button-subsribe:focus,
+ .button-subsribe:hover{
+     background-color: #188ce8;
+ }
