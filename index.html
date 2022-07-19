@@ -402,7 +402,7 @@
       
        
       <div class=" links-cont">
-       <h3 class="footer-links">присоединяйтесь</h3>
+       <h3 class="footer-title">присоединяйтесь</h3>
         <ul class="social-links-list-footer">
           <li>
             <a class="social-link-footer" href="#">
@@ -435,11 +435,17 @@
           </li>
         </ul>
       </div>
-      <div class="email-input">
-        <h3>Подпишитесь на рассылку</h3>
-       
-          <input placeholder="E-mail">
-        </lable>
+      <div class="subscribe">
+        <h3 class="footer-title">Подпишитесь на рассылку</h3>
+        <div class="subscribe-form">
+       <label for="mail"></label>
+          <input class="sub-field" placeholder="E-mail" name="mail" id="mail">
+          <button class="button-subsribe" type="submit">Подписаться
+          <svg class="icon" width="24" height="24">
+            <use href="./image/symbol-defs.svg#icon-send"></use>
+          </svg>
+          </button>
+        </div>
       </div>
       </div>
       </div>
@@ -462,8 +468,6 @@
             </svg>
              </div>
           </lable>
-       
-        
         <lable class="form-lable" for="user_email" >Почта
           <div class="form-field">
            <input class="form-input" id="user_email" type="email" name="user-email">
@@ -472,8 +476,6 @@
             </svg>
             </div>
           </lable>
-          
-        
           <lable class="form-lable" for="user_tel"  >Телефон
             <div class="form-field">
            <input class="form-input" id="user_tel" type="tel" name="user-tel">
@@ -487,16 +489,18 @@
           </label>
            <div class="form-field checkbox">
             
-               <label class="checkbox-lable" for="term-condition">
+              <label class="checkbox-lable" for="term-condition">
             <input class="checkbox-input visually-hidden" 
                   id="term-condition"
                   type="checkbox"
                   name="term-condition">
+                 
               <span class="icon-checkbox"></span>
-              Соглашаюсь с рассылкой и принимаю <a class="agree" href="#"> Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю 
+              <a class="agree" href="#">  Условия договора</a>
             </label>
            </div>
-          
+           <button class="sub-button" type="submit">Отправить</button>
       </form>
     </div>
   </div>

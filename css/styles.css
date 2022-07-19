@@ -52,8 +52,7 @@ img {
 }
 .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+   margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -521,6 +520,7 @@ background-color: var(--color-accent);
 .link-adress-footer{
     display: flex;
     align-items: baseline;
+   padding-left: 0px;
 }
 
 .address-footer{
@@ -531,8 +531,7 @@ background-color: var(--color-accent);
 
 footer {
     background-color: var(--color-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
+
 }
 
 
@@ -580,7 +579,7 @@ footer {
      color: var(--color-accent);
 }
 
-.footer-links{
+.footer-title{
          
        
         font-style: normal;
@@ -935,21 +934,122 @@ footer {
     padding-top: 10px;
   
 } */
+.checkbox-lable{
+    display:flex;
+    align-items: center;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+.checkbox-input{
+    appearance: none;
+   
+}
 .icon-checkbox{
-    display: inline-block;
-    border: 2px solid var(--color-background);
-    border-radius: 4px;
-    width: 15px;
-    height: 15px;
-    background-color: var(--color-accent);
 
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    border: 2px solid #212121;
+    transition: background-color var(--transition);
+  
 }
-/* .checkbox:checked + .icon-checkbox{
-    border-color: var(--color-accent);
+.checkbox-input:checked + .icon-checkbox {
     background-color: var(--color-accent);
-    background-image: url(../image/symbol-defs.svg#icon-check);
-    background-size: contain; */
+    background-image: url(../image/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+   
+    background-size:contain;
+    border:var(--color-accent);
+    background-origin: border-box ;
+    transition: background-color var(--transition),border-color var(--transition),background-image var(--transition);
 }
+
 .agree{
+    padding-left: 4px;
     color: #2196F3;
+    font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+.sub-button{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+        line-height: 1.875;
+    letter-spacing: 0.06em;
+        width: 200px;
+        height: 50px;
+        left: 700px;
+        padding: 10px 55px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--color-primary);
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 4px;
+    
+}
+.subscribe{
+     display: block;
+        padding-top: 72px;
+            padding-bottom: 94px;
+            margin-left: 93px;
+}
+.sub-field{
+        width: 350px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: inherit;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 16px;
+       margin-right: 12px;
+}
+.subscribe-form{
+  
+        align-items: center;
+            justify-content: center;
+}
+.subscribe .button-subsribe{
+    
+    position: relative;
+
+     width: 200px;
+     height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--color-primary);
+        background-color: var(--color-accent);
+        cursor: pointer;
+        border: 0px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+        border-radius: 4px;
+        padding: 10px 62px 10px 29px;
+        transition: background-color var(--color-accent);
+}
+.subscribe .icon{
+position: absolute;
+            top: 50%;
+            right: 28px;
+            transform: translateY(-50%);
+       
 }
