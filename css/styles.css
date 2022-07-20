@@ -837,7 +837,8 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    background-color:1px solid rgba(0, 0, 0, 0.1);
+    outline:1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-primary);
     border: none;
     border-radius: 50%;
     padding: 6px 6px;
@@ -849,9 +850,10 @@ footer {
   .modal-icon{
     fill: #000000;
     align-items: center;
-    border: none;
-       
-      
+    border: none;  
+  }
+  .modal-icon:hover{
+    fill: var(--color-accent);
   }
   .form{
     min-width: 448px;
@@ -898,6 +900,12 @@ footer {
   .form-lable{
     display: block;
    padding-bottom: 10px;
+    color: #757575;
+    letter-spacing: 0.01em;
+    font-size: 12px;
+    line-height: 1.16;
+    font-style: normal;
+        font-weight: 400;
   }
   .form-icon{
     position: absolute;
@@ -911,29 +919,28 @@ footer {
     fill: var(--color-accent);
   
   }
-  .textarear{
+  .placeholder{
+
+  }
+ .textarea {
     width: 100%;
     resize: none;
     padding: 12px 16px;
     margin-top: 4px;
     outline: none;
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: var(--transition);
   }
-  .textarear:focus{
+  .textarea:focus{
     border: 1px solid var(--color-accent)
   }
+.textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+}
 
 
-/* .checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding-top: 10px;
-  
-} */
 .checkbox-lable{
     display:flex;
     align-items: center;
